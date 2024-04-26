@@ -1,0 +1,31 @@
+{
+    "proto": "proto/flex.proto",
+    "call": "flex.FlexService/NormalRPC",
+    "total": 101000,
+    "skipFirst": 1000,
+    "concurrency": 50,
+    "data": {
+        "msg": {
+            "doubleField": 123.4567,
+            "floatField": 123.4567,
+            "int32Field": 1234,
+            "int64Field": 1234567,
+            "uint32Field": 1234,
+            "uint64Field": 1234567,
+            "sint32Field": 1234,
+            "sint64Field": 1234567,
+            "fixed32Field": 1234,
+            "fixed64Field": 1234567,
+            "sfixed32Field": 1234,
+            "sfixed64Field": 1234567,
+            "boolField": true,
+            "stringField": "hello world",
+            "msgField": {},
+            "repeatedMsgField": [{}, {}],
+            "optionalMsgField": {}
+        }
+    },
+    "max-duration": "10s",
+    "host": "0.0.0.0:6660",
+    "insecure": true
+}
