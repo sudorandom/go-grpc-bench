@@ -23,9 +23,7 @@ type server struct {
 
 // NormalRPC implements gen.FlexServiceServer.
 func (s *server) NormalRPC(ctx context.Context, req *pb.FlexRequest) (*pb.FlexReply, error) {
-	return &pb.FlexReply{
-		Msg: req.Msg,
-	}, nil
+	return &pb.FlexReply{Msg: req.Msg}, nil
 }
 
 func main() {
@@ -33,7 +31,7 @@ func main() {
 	flag.BoolVar(&withVT, "withvt", false, "enable vtprotobuf optimizations")
 	flag.Parse()
 
-	log.Printf("Starting connectrpc withVT=%t", withVT)
+	log.Printf("Starting grpc-go withVT=%t", withVT)
 
 	if withVT {
 		encoding.RegisterCodec(vtgrpc.Codec{})

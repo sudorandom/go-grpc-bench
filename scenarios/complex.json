@@ -25,7 +25,7 @@
             "optionalMsgField": {}
         }
     },
-    "max-duration": "10s",
+    "max-duration": "60s",
     "host": "0.0.0.0:6660",
     "insecure": true
 }
