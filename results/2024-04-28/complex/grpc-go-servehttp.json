@@ -1,0 +1,163 @@
+{
+  "date": "2024-04-28T15:00:35+02:00",
+  "endReason": "timeout",
+  "options": {
+    "call": "flex.FlexService/NormalRPC",
+    "host": "0.0.0.0:6660",
+    "proto": "proto/flex.proto",
+    "import-paths": [
+      "proto",
+      "."
+    ],
+    "insecure": true,
+    "load-schedule": "const",
+    "load-start": 0,
+    "load-end": 0,
+    "load-step": 0,
+    "load-step-duration": 0,
+    "load-max-duration": 0,
+    "concurrency": 50,
+    "concurrency-schedule": "const",
+    "concurrency-start": 1,
+    "concurrency-end": 0,
+    "concurrency-step": 0,
+    "concurrency-step-duration": 0,
+    "concurrency-max-duration": 0,
+    "total": 2147483647,
+    "connections": 20,
+    "duration": 60000000000,
+    "timeout": 20000000000,
+    "dial-timeout": 10000000000,
+    "data": {
+      "msg": {
+        "boolField": true,
+        "doubleField": 123.4567,
+        "fixed32Field": 1234,
+        "fixed64Field": 1234567,
+        "floatField": 123.4567,
+        "int32Field": 1234,
+        "int64Field": 1234567,
+        "msgField": {},
+        "optionalMsgField": {},
+        "repeatedMsgField": [
+          {},
+          {}
+        ],
+        "sfixed32Field": 1234,
+        "sfixed64Field": 1234567,
+        "sint32Field": 1234,
+        "sint64Field": 1234567,
+        "stringField": "hello world",
+        "uint32Field": 1234,
+        "uint64Field": 1234567
+      }
+    },
+    "binary": false,
+    "CPUs": 8,
+    "skipFirst": 1000
+  },
+  "count": 1287968,
+  "total": 60010006750,
+  "average": 1122480,
+  "fastest": 55750,
+  "slowest": 69853541,
+  "rps": 21462.55382649161,
+  "errorDistribution": {
+    "rpc error: code = Canceled desc = grpc: the client connection is closing": 29,
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:50300->127.0.0.1:6660: use of closed network connection": 1,
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:50309->127.0.0.1:6660: use of closed network connection": 1,
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:50317->127.0.0.1:6660: use of closed network connection": 1
+  },
+  "statusCodeDistribution": {
+    "Canceled": 29,
+    "OK": 1287936,
+    "Unavailable": 3
+  },
+  "latencyDistribution": [
+    {
+      "percentage": 10,
+      "latency": 208416
+    },
+    {
+      "percentage": 25,
+      "latency": 395625
+    },
+    {
+      "percentage": 50,
+      "latency": 810750
+    },
+    {
+      "percentage": 75,
+      "latency": 1482750
+    },
+    {
+      "percentage": 90,
+      "latency": 2319416
+    },
+    {
+      "percentage": 95,
+      "latency": 2989208
+    },
+    {
+      "percentage": 99,
+      "latency": 5141583
+    }
+  ],
+  "histogram": [
+    {
+      "mark": 0.00005575,
+      "count": 1,
+      "frequency": 0.000001
+    },
+    {
+      "mark": 0.007035529100000002,
+      "count": 996092,
+      "frequency": 0.996092
+    },
+    {
+      "mark": 0.014015308200000003,
+      "count": 3453,
+      "frequency": 0.003453
+    },
+    {
+      "mark": 0.020995087300000003,
+      "count": 381,
+      "frequency": 0.000381
+    },
+    {
+      "mark": 0.027974866400000006,
+      "count": 59,
+      "frequency": 0.000059
+    },
+    {
+      "mark": 0.034954645500000006,
+      "count": 5,
+      "frequency": 0.000005
+    },
+    {
+      "mark": 0.041934424600000006,
+      "count": 1,
+      "frequency": 0.000001
+    },
+    {
+      "mark": 0.04891420370000001,
+      "count": 2,
+      "frequency": 0.000002
+    },
+    {
+      "mark": 0.05589398280000001,
+      "count": 0,
+      "frequency": 0
+    },
+    {
+      "mark": 0.06287376190000002,
+      "count": 0,
+      "frequency": 0
+    },
+    {
+      "mark": 0.069853541,
+      "count": 6,
+      "frequency": 0.000006
+    }
+  ]
+}

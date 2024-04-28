@@ -1,0 +1,12 @@
+{
+    "proto": "proto/flex.proto",
+    "call": "flex.FlexService/NormalRPC",
+    "total": 101000,
+    "skipFirst": 1000,
+    "concurrency": 50,
+    "connections": 20,
+    "data": {},
+    "max-duration": "35s",
+    "host": "0.0.0.0:6660",
+    "insecure": true
+}

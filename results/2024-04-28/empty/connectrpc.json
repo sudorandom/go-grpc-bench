@@ -1,0 +1,151 @@
+{
+  "date": "2024-04-28T15:34:05+02:00",
+  "endReason": "cancel",
+  "options": {
+    "call": "flex.FlexService/NormalRPC",
+    "host": "0.0.0.0:6660",
+    "proto": "proto/flex.proto",
+    "import-paths": [
+      "proto",
+      "."
+    ],
+    "insecure": true,
+    "load-schedule": "const",
+    "load-start": 0,
+    "load-end": 0,
+    "load-step": 0,
+    "load-step-duration": 0,
+    "load-max-duration": 0,
+    "concurrency": 50,
+    "concurrency-schedule": "const",
+    "concurrency-start": 1,
+    "concurrency-end": 0,
+    "concurrency-step": 0,
+    "concurrency-step-duration": 0,
+    "concurrency-max-duration": 0,
+    "total": 2147483647,
+    "connections": 20,
+    "duration": 35000000000,
+    "timeout": 20000000000,
+    "dial-timeout": 10000000000,
+    "data": {},
+    "binary": false,
+    "CPUs": 8,
+    "skipFirst": 1000
+  },
+  "count": 14223,
+  "total": 578678417,
+  "average": 981767,
+  "fastest": 48292,
+  "slowest": 24654917,
+  "rps": 24578.417964394204,
+  "errorDistribution": {
+    "rpc error: code = Canceled desc = grpc: the client connection is closing": 14,
+    "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing dial tcp 0.0.0.0:6660: connect: connection refused\"": 5,
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:51242->127.0.0.1:6660: read: connection reset by peer": 1,
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:51243->127.0.0.1:6660: use of closed network connection": 1,
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:51244->127.0.0.1:6660: read: connection reset by peer": 1,
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:51245->127.0.0.1:6660: read: connection reset by peer": 2,
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:51248->127.0.0.1:6660: read: connection reset by peer": 1,
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:51249->127.0.0.1:6660: read: connection reset by peer": 1,
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:51250->127.0.0.1:6660: read: connection reset by peer": 3,
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:51252->127.0.0.1:6660: read: connection reset by peer": 2,
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:51253->127.0.0.1:6660: read: connection reset by peer": 2,
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:51254->127.0.0.1:6660: read: connection reset by peer": 3,
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:51255->127.0.0.1:6660: read: connection reset by peer": 1,
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:51256->127.0.0.1:6660: read: connection reset by peer": 2,
+    "rpc error: code = Unavailable desc = transport is closing": 3
+  },
+  "statusCodeDistribution": {
+    "Canceled": 14,
+    "OK": 14181,
+    "Unavailable": 28
+  },
+  "latencyDistribution": [
+    {
+      "percentage": 10,
+      "latency": 223292
+    },
+    {
+      "percentage": 25,
+      "latency": 418584
+    },
+    {
+      "percentage": 50,
+      "latency": 740917
+    },
+    {
+      "percentage": 75,
+      "latency": 1257833
+    },
+    {
+      "percentage": 90,
+      "latency": 1904000
+    },
+    {
+      "percentage": 95,
+      "latency": 2428167
+    },
+    {
+      "percentage": 99,
+      "latency": 4459792
+    }
+  ],
+  "histogram": [
+    {
+      "mark": 0.000048292,
+      "count": 1,
+      "frequency": 0.00007051688879486637
+    },
+    {
+      "mark": 0.0025089545,
+      "count": 13526,
+      "frequency": 0.9538114378393625
+    },
+    {
+      "mark": 0.004969617,
+      "count": 556,
+      "frequency": 0.039207390169945705
+    },
+    {
+      "mark": 0.0074302794999999994,
+      "count": 61,
+      "frequency": 0.004301530216486849
+    },
+    {
+      "mark": 0.009890942,
+      "count": 21,
+      "frequency": 0.0014808546646921938
+    },
+    {
+      "mark": 0.0123516045,
+      "count": 2,
+      "frequency": 0.00014103377758973275
+    },
+    {
+      "mark": 0.014812266999999999,
+      "count": 6,
+      "frequency": 0.0004231013327691982
+    },
+    {
+      "mark": 0.0172729295,
+      "count": 3,
+      "frequency": 0.0002115506663845991
+    },
+    {
+      "mark": 0.019733591999999998,
+      "count": 2,
+      "frequency": 0.00014103377758973275
+    },
+    {
+      "mark": 0.0221942545,
+      "count": 1,
+      "frequency": 0.00007051688879486637
+    },
+    {
+      "mark": 0.024654917,
+      "count": 2,
+      "frequency": 0.00014103377758973275
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "date": "2024-04-28T14:55:14+02:00",
+  "endReason": "timeout",
+  "options": {
+    "call": "flex.FlexService/NormalRPC",
+    "host": "0.0.0.0:6660",
+    "proto": "proto/flex.proto",
+    "import-paths": [
+      "proto",
+      "."
+    ],
+    "insecure": true,
+    "load-schedule": "const",
+    "load-start": 0,
+    "load-end": 0,
+    "load-step": 0,
+    "load-step-duration": 0,
+    "load-max-duration": 0,
+    "concurrency": 50,
+    "concurrency-schedule": "const",
+    "concurrency-start": 1,
+    "concurrency-end": 0,
+    "concurrency-step": 0,
+    "concurrency-step-duration": 0,
+    "concurrency-max-duration": 0,
+    "total": 2147483647,
+    "connections": 20,
+    "duration": 35000000000,
+    "timeout": 20000000000,
+    "dial-timeout": 10000000000,
+    "data": {},
+    "binary": false,
+    "CPUs": 8,
+    "skipFirst": 1000
+  },
+  "count": 830067,
+  "total": 34999365292,
+  "average": 940791,
+  "fastest": 45500,
+  "slowest": 32020708,
+  "rps": 23716.630089567167,
+  "errorDistribution": {
+    "rpc error: code = Canceled desc = grpc: the client connection is closing": 12,
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:50075->127.0.0.1:6660: use of closed network connection": 1,
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:50080->127.0.0.1:6660: use of closed network connection": 1,
+    "rpc error: code = Unavailable desc = transport is closing": 1
+  },
+  "statusCodeDistribution": {
+    "Canceled": 12,
+    "OK": 830052,
+    "Unavailable": 3
+  },
+  "latencyDistribution": [
+    {
+      "percentage": 10,
+      "latency": 164250
+    },
+    {
+      "percentage": 25,
+      "latency": 324417
+    },
+    {
+      "percentage": 50,
+      "latency": 673541
+    },
+    {
+      "percentage": 75,
+      "latency": 1243333
+    },
+    {
+      "percentage": 90,
+      "latency": 1966542
+    },
+    {
+      "percentage": 95,
+      "latency": 2549500
+    },
+    {
+      "percentage": 99,
+      "latency": 4501875
+    }
+  ],
+  "histogram": [
+    {
+      "mark": 0.0000455,
+      "count": 1,
+      "frequency": 0.0000012047437991836656
+    },
+    {
+      "mark": 0.0032430208000000004,
+      "count": 809229,
+      "frequency": 0.9749136198695986
+    },
+    {
+      "mark": 0.006440541600000001,
+      "count": 17740,
+      "frequency": 0.02137215499751823
+    },
+    {
+      "mark": 0.009638062400000001,
+      "count": 2182,
+      "frequency": 0.0026287509698187583
+    },
+    {
+      "mark": 0.012835583200000002,
+      "count": 474,
+      "frequency": 0.0005710485608130574
+    },
+    {
+      "mark": 0.016033104000000003,
+      "count": 241,
+      "frequency": 0.0002903432556032634
+    },
+    {
+      "mark": 0.019230624800000002,
+      "count": 105,
+      "frequency": 0.0001264980989142849
+    },
+    {
+      "mark": 0.022428145600000005,
+      "count": 50,
+      "frequency": 0.00006023718995918328
+    },
+    {
+      "mark": 0.025625666400000004,
+      "count": 25,
+      "frequency": 0.00003011859497959164
+    },
+    {
+      "mark": 0.028823187200000003,
+      "count": 4,
+      "frequency": 0.000004818975196734662
+    },
+    {
+      "mark": 0.032020708,
+      "count": 1,
+      "frequency": 0.0000012047437991836656
+    }
+  ]
+}

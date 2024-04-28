@@ -1,0 +1,159 @@
+{
+  "date": "2024-04-27T21:58:16+02:00",
+  "endReason": "timeout",
+  "options": {
+    "call": "flex.FlexService/NormalRPC",
+    "host": "0.0.0.0:6660",
+    "proto": "proto/flex.proto",
+    "import-paths": [
+      "proto",
+      "."
+    ],
+    "insecure": true,
+    "load-schedule": "const",
+    "load-start": 0,
+    "load-end": 0,
+    "load-step": 0,
+    "load-step-duration": 0,
+    "load-max-duration": 0,
+    "concurrency": 50,
+    "concurrency-schedule": "const",
+    "concurrency-start": 1,
+    "concurrency-end": 0,
+    "concurrency-step": 0,
+    "concurrency-step-duration": 0,
+    "concurrency-max-duration": 0,
+    "total": 2147483647,
+    "connections": 1,
+    "duration": 60000000000,
+    "timeout": 20000000000,
+    "dial-timeout": 10000000000,
+    "data": {
+      "msg": {
+        "boolField": true,
+        "doubleField": 123.4567,
+        "fixed32Field": 1234,
+        "fixed64Field": 1234567,
+        "floatField": 123.4567,
+        "int32Field": 1234,
+        "int64Field": 1234567,
+        "msgField": {},
+        "optionalMsgField": {},
+        "repeatedMsgField": [
+          {},
+          {}
+        ],
+        "sfixed32Field": 1234,
+        "sfixed64Field": 1234567,
+        "sint32Field": 1234,
+        "sint64Field": 1234567,
+        "stringField": "hello world",
+        "uint32Field": 1234,
+        "uint64Field": 1234567
+      }
+    },
+    "binary": false,
+    "CPUs": 8,
+    "skipFirst": 1000
+  },
+  "count": 1391787,
+  "total": 60000217250,
+  "average": 1752128,
+  "fastest": 94250,
+  "slowest": 8372833,
+  "rps": 23196.36600982474,
+  "errorDistribution": {
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:54227->127.0.0.1:6660: use of closed network connection": 50
+  },
+  "statusCodeDistribution": {
+    "OK": 1391737,
+    "Unavailable": 50
+  },
+  "latencyDistribution": [
+    {
+      "percentage": 10,
+      "latency": 941042
+    },
+    {
+      "percentage": 25,
+      "latency": 1281917
+    },
+    {
+      "percentage": 50,
+      "latency": 1685917
+    },
+    {
+      "percentage": 75,
+      "latency": 2119792
+    },
+    {
+      "percentage": 90,
+      "latency": 2596458
+    },
+    {
+      "percentage": 95,
+      "latency": 3004542
+    },
+    {
+      "percentage": 99,
+      "latency": 4004166
+    }
+  ],
+  "histogram": [
+    {
+      "mark": 0.00009425,
+      "count": 1,
+      "frequency": 0.000001
+    },
+    {
+      "mark": 0.0009221082999999999,
+      "count": 93958,
+      "frequency": 0.093958
+    },
+    {
+      "mark": 0.0017499665999999997,
+      "count": 446918,
+      "frequency": 0.446918
+    },
+    {
+      "mark": 0.0025778248999999997,
+      "count": 355455,
+      "frequency": 0.355455
+    },
+    {
+      "mark": 0.0034056831999999997,
+      "count": 75828,
+      "frequency": 0.075828
+    },
+    {
+      "mark": 0.004233541499999999,
+      "count": 21872,
+      "frequency": 0.021872
+    },
+    {
+      "mark": 0.0050613998,
+      "count": 5340,
+      "frequency": 0.00534
+    },
+    {
+      "mark": 0.005889258099999999,
+      "count": 542,
+      "frequency": 0.000542
+    },
+    {
+      "mark": 0.006717116399999999,
+      "count": 60,
+      "frequency": 0.00006
+    },
+    {
+      "mark": 0.007544974699999999,
+      "count": 17,
+      "frequency": 0.000017
+    },
+    {
+      "mark": 0.008372833,
+      "count": 9,
+      "frequency": 0.000009
+    }
+  ]
+}

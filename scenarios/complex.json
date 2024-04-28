@@ -4,6 +4,7 @@
     "total": 101000,
     "skipFirst": 1000,
     "concurrency": 50,
+    "connections": 20,
     "data": {
         "msg": {
             "doubleField": 123.4567,
