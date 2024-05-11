@@ -1,0 +1,144 @@
+{
+  "date": "2024-05-11T19:52:14+02:00",
+  "endReason": "timeout",
+  "options": {
+    "call": "flex.FlexService/NormalRPC",
+    "host": "0.0.0.0:6660",
+    "proto": "proto/flex.proto",
+    "import-paths": [
+      "proto",
+      "."
+    ],
+    "insecure": true,
+    "load-schedule": "const",
+    "load-start": 0,
+    "load-end": 0,
+    "load-step": 0,
+    "load-step-duration": 0,
+    "load-max-duration": 0,
+    "concurrency": 50,
+    "concurrency-schedule": "const",
+    "concurrency-start": 1,
+    "concurrency-end": 0,
+    "concurrency-step": 0,
+    "concurrency-step-duration": 0,
+    "concurrency-max-duration": 0,
+    "total": 2147483647,
+    "connections": 20,
+    "duration": 300000000000,
+    "timeout": 20000000000,
+    "dial-timeout": 10000000000,
+    "data": {},
+    "binary": false,
+    "CPUs": 8,
+    "skipFirst": 1000
+  },
+  "count": 6090906,
+  "total": 299998369736,
+  "average": 885068,
+  "fastest": 67084,
+  "slowest": 29247142,
+  "rps": 20303.130331541557,
+  "errorDistribution": {
+    "rpc error: code = Canceled desc = grpc: the client connection is closing": 8,
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52022->127.0.0.1:6660: use of closed network connection": 2,
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52044->127.0.0.1:6660: use of closed network connection": 1,
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52058->127.0.0.1:6660: use of closed network connection": 3,
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52060->127.0.0.1:6660: use of closed network connection": 2,
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52094->127.0.0.1:6660: use of closed network connection": 1,
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52146->127.0.0.1:6660: use of closed network connection": 1,
+    "rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:52154->127.0.0.1:6660: use of closed network connection": 1
+  },
+  "statusCodeDistribution": {
+    "Canceled": 8,
+    "OK": 6090887,
+    "Unavailable": 11
+  },
+  "latencyDistribution": [
+    {
+      "percentage": 10,
+      "latency": 195263
+    },
+    {
+      "percentage": 25,
+      "latency": 314089
+    },
+    {
+      "percentage": 50,
+      "latency": 593702
+    },
+    {
+      "percentage": 75,
+      "latency": 1096414
+    },
+    {
+      "percentage": 90,
+      "latency": 1786620
+    },
+    {
+      "percentage": 95,
+      "latency": 2365650
+    },
+    {
+      "percentage": 99,
+      "latency": 4216512
+    }
+  ],
+  "histogram": [
+    {
+      "mark": 6.7084e-05,
+      "count": 1,
+      "frequency": 1e-06
+    },
+    {
+      "mark": 0.0029850898,
+      "count": 974356,
+      "frequency": 0.974356
+    },
+    {
+      "mark": 0.005903095600000001,
+      "count": 21117,
+      "frequency": 0.021117
+    },
+    {
+      "mark": 0.008821101400000001,
+      "count": 2887,
+      "frequency": 0.002887
+    },
+    {
+      "mark": 0.011739107200000001,
+      "count": 1012,
+      "frequency": 0.001012
+    },
+    {
+      "mark": 0.014657113000000001,
+      "count": 423,
+      "frequency": 0.000423
+    },
+    {
+      "mark": 0.0175751188,
+      "count": 139,
+      "frequency": 0.000139
+    },
+    {
+      "mark": 0.0204931246,
+      "count": 37,
+      "frequency": 3.7e-05
+    },
+    {
+      "mark": 0.0234111304,
+      "count": 12,
+      "frequency": 1.2e-05
+    },
+    {
+      "mark": 0.026329136200000002,
+      "count": 13,
+      "frequency": 1.3e-05
+    },
+    {
+      "mark": 0.029247142,
+      "count": 3,
+      "frequency": 3e-06
+    }
+  ]
+}

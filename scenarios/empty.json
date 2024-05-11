@@ -6,7 +6,7 @@
     "concurrency": 50,
     "connections": 20,
     "data": {},
-    "max-duration": "35s",
+    "max-duration": "300s",
     "host": "0.0.0.0:6660",
     "insecure": true
 }
